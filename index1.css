@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: thistle;
+    margin: auto;
+    margin-top: 10%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.box::after{
+    content: '';
+    width: 5px;
+    height: 100%;
+    position: absolute;
+top: -100%;
+left:0;
+    transition: 2s;
+    
+    background-color: burlywood;
+    
+   
+} 
+.box:hover.box::after{
+    top: 0;
+}
+
+
+.box::before{
+    content: '';
+    width: 5px;
+    height: 100%;
+    position: absolute;
+top: -100%;
+right:0;
+    transition: 2s;
+    
+    background-color: burlywood;
+    
+   
+} 
+.box:hover.box::before{
+    top: 0;
+}
